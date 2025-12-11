@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "variables";
+@import 'fonts';
+@import 'reset';
+@import 'core';
+
+@import 'blocks/header.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/dms-product.scss';
