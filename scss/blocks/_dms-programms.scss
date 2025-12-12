@@ -1,0 +1,57 @@
+.dms-programms {
+    margin-bottom: 72px;
+
+    color: #f8f9f9;
+
+    &__wrapper {
+        border-radius: 32px;
+        background: $main-color;
+
+        padding: 60px 40px;
+
+        @media (max-width: 767px) {
+            padding: 20px 20px 158px 20px;
+        }
+    }
+
+    &__title {
+        font-family: $font-roboto;
+        color: #f8f9f9;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 120%;
+
+        width: 620px;
+
+        margin-bottom: 32px;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+
+            width: 100%;
+        }
+    }
+
+    &__list {
+        list-style: disc;
+        list-style-position: outside;
+
+        margin-left: 20px;
+    }
+
+    &__text {
+        font-family: $font-helvetica;
+        color: #f8f9f9;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 130%;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
