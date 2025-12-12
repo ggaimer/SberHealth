@@ -2,7 +2,8 @@
     margin-block: 72px;
 
     &__title {
-        width: 891px;
+        max-width: 891px;
+        width: 100%;
 
         margin-bottom: 32px;
 
@@ -66,8 +67,6 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 20px;
-
-        max-width: 1380px;
 
         @media (max-width: 1024px) {
             grid-template-columns: repeat(4, 1fr);
