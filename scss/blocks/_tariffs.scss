@@ -1,0 +1,233 @@
+.tariffs {
+    margin-bottom: 72px;
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        font-family: $font-roboto;
+        color: #47464a;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+        
+        width: 735px;
+
+        margin-bottom: 32px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+
+        @media (max-width: 1316px) {
+            gap: 32px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 429px;
+        height: auto;
+
+        font-family: $font-roboto;
+
+        border-radius: 20px;
+        background-color: #fff;
+
+        padding: 28px;
+
+        &-title {
+            font-family: $font-helvetica;
+            font-size: 32px;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+        }
+
+        &-text {
+            color: #687082;
+            font-weight: 400;
+            line-height: 130%;
+
+            width: 373px;
+
+            margin-bottom: 16px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__price {
+        font-family: $font-helvetica;
+        color: #1f1f1f;
+        font-size: 48px;
+        font-weight: 700;
+
+        display: block;
+
+        margin-bottom: 30px;
+        text-align: center;
+
+        & span {
+            font-weight: 400;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 373px;
+        height: 56px;
+
+        font-family: $font-helvetica;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        border-radius: 10px;
+        background-color: $main-color;
+
+        padding: 8px 32px;
+
+        &:hover {
+            background-color: #000;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__note {
+        font-family: $font-roboto;
+        color: #687082;
+        font-weight: 400;
+        line-height: 130%;
+
+        display: block;
+
+        width: 735px;
+        
+        & span {
+            color: #00a070;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
+.services-group {
+    &__title {
+        color: #47464a;
+        font-size: 16px;
+        font-weight: 600;
+
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 30px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &-item {
+            position: relative;
+            color: #47464a;
+            font-size: 16px;
+            font-weight: 400;
+
+            padding-left: 32px;
+
+            &::before {
+                position: absolute;
+                content: '';
+
+                width: 23px;
+                height: 13px;
+                background-image: url("../../assets/images/icons/double-check.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+
+            &--limited::before {
+                background-image: url("../../assets/images/icons/check.svg");
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.dentistry {
+    width: 172px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background-color: #00a070;
+
+    transform: rotate(19deg);
+
+    position: absolute;
+    top: 0;
+    right: -15px;
+
+    &__text {
+        font-family: $font-roboto;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

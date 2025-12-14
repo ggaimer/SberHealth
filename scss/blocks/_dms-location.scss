@@ -1,0 +1,72 @@
+.dms-location {
+    margin-bottom: 72px;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        width: 429px;
+        height: 171px;
+        
+        border-radius: 20px;
+        background-color: #fff;
+
+        padding: 20px;
+
+        &-title {
+            font-family: $font-helvetica;
+            font-size: 20px;
+            font-weight: 700;
+
+            width: 294px;
+
+            margin-bottom: 16px;
+
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            font-family: $font-roboto;
+            color: #47464a;
+            font-weight: 400;
+            line-height: 130%;
+
+            width: 390px;
+
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__wrapper {
+        padding: 40px 0 218px 0;
+        
+        background-image: url("../../assets/images/dms-location/dms-location.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @media (max-width: 767px) {
+            background-size: cover;
+            
+            padding: 0 0 218px 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
